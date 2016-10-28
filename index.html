@@ -1,1 +1,62 @@
-<p>geee</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- script and style block -->
+            <script type="text/javascript" src="lib/jquery/1.10.2/jquery-1.10.2.min.js" ></script>
+            <!-- audio -->
+                <script type="text/javascript" src="lib/jPlayer.2.6.0/js/jquery.jplayer.min.js"></script>
+                <script type="text/javascript" src="lib/jPlayer.2.6.0/js/jplayer.playlist.min.js"></script>
+                <link href="lib/jPlayer.2.6.0/skin/vkontakte/vkontakte.css" rel="stylesheet" type="text/css" />
+            <!-- audio -->
+        <!-- /script and style block -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <!-- pour cette page -->
+        <link 
+            href="example.css" 
+            media="all" 
+            rel="stylesheet" />
+        
+    </head>
+    <body >
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio">
+
+            <div class="jp-type-playlist">
+                <div class="jp-gui jp-interface">
+                    <ul class="jp-controls">
+                        <li>
+                            <label id="name-of-the-song-that-plays">Let’s start</label>
+                        </li>
+                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    
+                    <!-- Регулятор громкости -->
+                    <div>
+                        <div class="sound-image">
+                            <img src="lib/jPlayer.2.6.0/skin/vkontakte/sound-logo.png">
+                        </div>
+                        <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+                    
+                    <div class="clear"></div>
+                </div>
+                <!-- Будущий плейлист -->
+                <div class="jp-playlist" style="display: none;">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<script type="text/javascript" src="example.js"></script>
